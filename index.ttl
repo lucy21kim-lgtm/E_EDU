@@ -1,0 +1,47 @@
+@prefix ex: <http://example.org/edu/> .
+@prefix schema: <https://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### 📝 [국어] 우리들의 말과 글
+ex:KOR_2_01 a ex:AchievementStandard ;
+    rdfs:label "📖 [2국02-01] 글자, 단어, 문장 읽기" ;
+    ex:description "글자, 단어, 문장을 소리 내어 읽으며 읽기의 즐거움을 느껴요!" ;
+    ex:matchedResource ex:Resource_KOR_Game .
+
+ex:Resource_KOR_Game a schema:CreativeWork ;
+    schema:name "🎮 한글 용사 아이야 - 단어 맞추기 게임" ;
+    schema:url <https://www.ebs.co.kr/kids/index> ;
+    ex:level "초등 1~2학년" ;
+    ex:funFactor "⭐⭐⭐⭐⭐" .
+
+### 🌍 [사회] 우리가 사는 세상
+ex:SOC_4_01 a ex:AchievementStandard ;
+    rdfs:label "📍 [4사01-01] 우리 지역의 위치와 모습" ;
+    ex:description "지도를 보며 우리가 사는 고장의 위치와 멋진 장소들을 찾아봐요!" ;
+    ex:matchedResource ex:Resource_SOC_Map .
+
+ex:Resource_SOC_Map a schema:CreativeWork ;
+    schema:name "🗺️ 카카오맵/네이버 지도 - 우리 동네 로드뷰" ;
+    schema:url <https://map.kakao.com> ;
+    ex:level "초등 3~4학년" ;
+    ex:funFactor "⭐⭐⭐⭐" .
+
+### 🔢 [수학] 척척박사 숫자 나라
+ex:MATH_6_01 a ex:AchievementStandard ;
+    rdfs:label "🍰 [6수01-04] 분수의 나눗셈" ;
+    ex:description "피자를 똑같이 나누는 것처럼 분수의 나눗셈 원리를 재미있게 배워요!" ;
+    ex:matchedResource ex:Resource_MATH_Video .
+
+ex:Resource_MATH_Video a schema:CreativeWork ;
+    schema:name "📺 칸아카데미 키즈 - 분수 개념 쏙쏙" ;
+    schema:url <https://ko.khanacademy.org/> ;
+    ex:level "초등 5~6학년" ;
+    ex:funFactor "⭐⭐⭐⭐" .
+
+### 🎨 디자인 스타일 가이드 (어린이용)
+ex:StyleGuide a ex:DesignConfig ;
+    ex:primaryColor "#FFEB3B" ; # 밝은 노란색 (활기참)
+    ex:secondaryColor "#4CAF50" ; # 초록색 (성장)
+    ex:font "NanumGothicCoding" ;
+    ex:iconSet "Emoji-Based" .
